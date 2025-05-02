@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+       
+      
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main img {
+    height: 500px;
+    width: 450px;
+    object-fit: cover;
+    position: relative;
+    z-index: 99;
+}
+
+#scroll-1 {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: scroll 10s linear infinite;
+}
+#scroll-1::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-1 h1 {
+    display: inline-block;
+    font-size: 160px;
+    font-family: monospace;
+    font-weight: 1000;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+}
+
+#scroll-2 {
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    width: 100%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;  
+
+}
+#scroll-2::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-2 h1 {
+    display: inline-block;
+    font-size: 160px;
+    font-family: monospace;
+    z-index: 100;    color: transparent;
+    text-transform: uppercase;
+    margin-right: 30px;
+    letter-spacing: 3px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+#scroll-3 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 100px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: scroll 10s linear infinite;
+}
+#scroll-3::-webkit-scrollbar{
+    display: none;
+}
+
+#scroll-3 h1 {
+    display: inline-block;
+    font-size: 160px;
+    font-family: monospace;
+    text-transform: uppercase;
+
+    margin-right: 30px;
+    letter-spacing: 3px;
+}
+
+#text{
+    font-size: 30px;
+    position: absolute;
+    top: 16%;
+    font-family: monospace;
+    text-align: center;
+    width: 60%;
+    z-index: 99;
+    text-transform: uppercase;
+}
+
+@keyframes scroll {
+    0%{
+       transform: translateX(calc( - 100% - 32%));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

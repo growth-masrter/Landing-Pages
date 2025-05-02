@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: salmon;
+    border: 2px solidblack;
+}
+#box::before{
+    content: "yo";
+}
+#box::after{
+    content: "fdd";
+}
+button {
+    padding: 8px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: palevioletred;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: antiquewhite;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+button:hover::before{
+    transform: scale(1.4);
+
+}

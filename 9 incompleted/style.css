@@ -1,0 +1,95 @@
+
+:root{
+    --nav-color: #191919;
+    --bg-color: #2a2c2b;
+    --footer-color: #131313;
+    --btn-color: #feda87;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+/* Header */
+
+header{
+    position: sticky;
+}
+.navbar{
+    background: var(--nav-color);
+    padding: 15px 15px ;
+}
+.navbar .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.nav-links a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+    padding: 9px;
+}
+.nav-links a:hover{
+    color: var(--btn-color);
+    border-bottom: 2px solid var(--btn-color);
+}
+
+/* MAIN */
+
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+
+}
+
+.section1{
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+}
+.section2{
+    background-color: palegoldenrod;
+    width: 100vw;
+    height: 100vh;
+}
+.section3{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 100vh;
+}
+.section4{
+    background-color: paleturquoise;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: var(--footer-color);
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+}
